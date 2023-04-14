@@ -1,0 +1,44 @@
+package javaapplication6;
+
+import java.util.Scanner;
+
+public class JavaApplication6 {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int n1, n2;
+        double p1, p2, total;
+        
+        //ponemos un precio a los conejos
+        p1 = 100;
+        p2 = 150;
+        
+        
+        //Pedimos al usuario la cantidad de conejos negros y blancos
+        System.out.println("Ingrese el numero conejos blancos: ");
+        n1 = entrada.nextInt();
+        
+        System.out.println("Ingrese el numero de conejos negros: ");
+        n2 = entrada.nextInt();
+        
+        //multiplicamos n1 por p1 para obtener el monto de conejos blancos
+        //multiplicamos n2 por p2 para obtener el monto de conejos negros
+        //el monto total de la venta es la suma de los productos
+        total = p1 * n1 + p2 * n2;       
+        
+        System.out.println("El monto total es: "+ total);
+        //comparamos n1 con n2 para saber cuales se vendieron mas
+        if(n1>n2){
+            System.out.println("Se vendieron mas conejos blancos");
+        }
+        else if(n2>n1){
+            System.out.println("Se vendieron mas conejos negros");
+        }
+        else{
+            System.out.println("Se vendió la misma cantidad de conejos negros y blancos");
+        }
+        
+        
+    }
+    
+}
