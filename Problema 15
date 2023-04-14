@@ -7,7 +7,7 @@ public class JavaApplication6 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int n1, n2;
-        double p1, p2, total;
+        float p1, p2, total;
         
         //ponemos un precio a los conejos
         p1 = 100;
